@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        h4 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .box {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px;
+            width: 200px;
+            text-align: center;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        h3 
+        {
+				margin-bottom: 10px;
+				font-size: 30px;
+				color: rgb(160, 2, 2);
+			}
+
+			h5 {
+				text-align: center;
+				margin-bottom: 40px;
+				font-size: 40px;
+				color: rgb(172, 0, 0);
+			}
+        .box:hover {
+            background-color: #45a049;
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+    <h3></H3>
+        <H3>Radio MGIRI 90.4 Fm </H3>
+        <br><br>
+    <div class="container">
+        <div class="box" onclick="redirect('https://www.google.com')">Qsheet</div>
+        <div class="box" onclick="redirect('https://www.youtube.com')">Quotations</div>
+        <div class="box" onclick="redirect('https://www.github.com')">Recording Scheduller</div>
+        <div class="box" onclick="redirect('https://www.stackoverflow.com')">Visitors Entry</div>
+        <div class="box" onclick="redirect('https://docs.google.com/forms/d/e/1FAIpQLSdzMV2Uv97-o4VJlEsDeHoN0AoEzs46IN0uV-HEvEoGTqd_pQ/viewform?usp=sf_link')">Training Application</div>
+        <div class="box" onclick="redirect('https://docs.google.com/forms/d/e/1FAIpQLSdZnMXVQD1JQ41LliNG0XQPqkZaJISo6UviiyyoX9sOPub-1g/viewform?usp=sf_link')">Payment Reciept</div>
+        <div class="box" onclick="redirect('https://docs.google.com/forms/d/e/1FAIpQLSc1TlDi9NRCkamtVzKXl8zEzLRazgn9Yg_-Rj7P6jD9LCjMtg/viewform?usp=sf_link')">Bhajan Application</div>
+        <div class="box" onclick="redirect('https://docs.google.com/forms/d/e/1FAIpQLSda0cwYZ2OctcgaBimUEPs1Od7mhxZ_0MHKNH_UolYZ7JBNoQ/viewform?usp=sf_link')">Certificate Management</div>
+        <div class="box" onclick="redirect('https://www.wikipedia.org')">View sheets</div>
+
+
+    </div>
+    <br><br><br><h2 style="text-align: center; font-style: italic; color: rgb(146, 109, 109);">Developed by Mahatma Gandhi Institute for Rural Industrialization</h2>
+    <script>
+        function redirect(url) {
+            window.open(url, '_blank'); // Open in a new tab
+        }
+    </script>
+
+</body>
+</html>

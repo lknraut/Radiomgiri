@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+		<!-- CSS styles integrated here -->
+		<style>
+			* {
+				box-sizing: border-box;
+				padding: 0;	
+				margin: 0;
+				font-family: 'Poppins', sans-serif;
+				font-size: 18px;
+			}
+			body {
+				height:;
+				/*display: flex;*/
+				align-items: center;
+				justify-content: center;
+			}
+			.container {
+				/*width: 500px;*/
+				padding: 30px;
+				border: 1px solid #ffffff;
+				border-radius: 20px;
+				background-color: #264601;
+			}
+
+			h3 {
+				margin-bottom: 10px;
+				font-size: 30px;
+				color: white;
+			}
+
+			h5 {
+				text-align: center;
+				margin-bottom: 40px;
+				font-size: 40px;
+				color: rgb(204, 157, 157);
+			}
+			input {
+				/*width: 100%;*/
+				padding: 5px;
+				margin-bottom: 25px;
+			}
+			textarea {
+				width: 90%;
+				padding: 10px;
+				
+			}
+			select {
+				margin-bottom: 10px;
+			}
+
+			#submit {
+				border: none;
+				background-color: orangered;
+				color: white;
+				width: 200px;
+				margin-top: 10px;
+				border-radius: 5px;
+			}
+			#submit:hover {
+				background-color: #333333;
+			}
+			#success-message {
+            display: none; /* Initially hidden */
+            background-color: rgb(223, 182, 0);
+			color: rgb(255, 255, 255);
+			border: none;
+			width: 200px;
+			margin-top: 10px;
+			border-radius: 5px;
+      
+		</style>
+	</head>
+		
+	<body>
+		<div class="container">
+			<form method="post" action="https://script.google.com/macros/s/AKfycbzcCOzk7sTHjH_sYheyN_6oIKcImzrt-ywd2Ld-iILSjdqy9NfW2NCS1lYJCoPuwAb_/exec" name="M-E_Qsheets">
+				<h5>Radio MGIRI 90.4FM<h5>
+				<h3>Morning Evening Cue- Sheet<h3>
+                
+				<label style="color: white;" for="date">Select a date: </label>
+                <input type="date" id="date" name="date">
+                <br>
+				<label for="Rupresha">Rupresha:</label>
+                <select id="rupresha" name="rupresha">
+                    <option value="_"></option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+				</select>
+                <label for="Dinvishesh">Dinvishesh:</label>
+                <select id="Dinvishesh" name="Dinvishesh">
+                    <option value="_"></option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option> <br>
+				</select>
+				<label for="Status-Dinvishesh">Status-Dinvishesh:</label>
+                <select id="Status-Dinvishesh" name="Status-Dinvishesh" style="margin-bottom: 20px;">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select><br>
+
+
+                <input type="text" name="Krushi-Sandesh" placeholder="Krushi Sandesh"required>
+				<label for="Krushi-SandeshNivedan">Krushi Sandesh Nivedan:</label>
+                <select id="Krushisandesh-Nivedan" name="krushi-Sandesh Nivedan">
+                    <option value="आर एस डवरे">आर एस डवरे</option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+                    <option value="_"></option>
+				</select>
+				<label for="Status-Krushi-Sandesh">Status-Krushi-Sandesh:</label>
+                <select id="Status-Krushi-Sandesh" name="Status-Krushi-Sandesh">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select><br>
+
+
+                <input type="text" name="संतमहिमा" placeholder="संतमहिमा"required>
+                <label for="संतमहिमासंतमहिमाnivedan">Santamahima Nivedan:</label>
+                <select id="संतमहिमा nivedan" name="Santmahimanivedan">
+                    <option value="शैलेन्द्र भारती">शैलेन्द्र भारती</option>
+					<option value="_"></option>
+                    <option value="देवराव महाराज">देवराव महाराज</option>
+                    <option value="पद्माकर गोवाइकर">पद्माकर गोवाइकर</option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+                    <option value="_"></option>
+				</select>
+				<label for="Status-Santmahima">Status-Santmahima:</label>
+                <select id="Status-Santmahima" name="Status-Santmahima">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select><br>
+
+
+
+                <input type="text" name="भक्तिरंग" placeholder="भक्तिरंग"required>
+                <label for="भक्तिरंगनिवेदन">भक्तिरंग निवेदन:</label>
+                <select id="भक्तिरंगनिवेदन" name="भक्तिरंगनिवेदन">
+					<option value="_"></option>
+                    <option value="बोरगाव मेघे भजन स्पर्धा">बोरगाव मेघे भजन स्पर्धा</option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+				</select>
+				<label for="Status-Bhaktirang">Status-Bhaktirang:</label>
+                <select id="Status-Bhaktirang" name="Status-Bhaktirang">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select>
+				<br>
+
+				<input type="text" name="युवा विश्व" placeholder="युवा विश्व"required>
+				<label for="युवा विश्व निवेदन "> युवा विश्व निवेदन :</label>
+                <select id="युवा विश्व निवेदन " name="युवा विश्व निवेदन">
+					<option value="_"></option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+					<option value="_"></option>
+				</select>
+				<label for="Status-YuvaWishw">Status-YuvaWishw:</label>
+                <select id="Status-YuvaWishw" name="Status-YuvaWishw">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select>
+				<br>
+
+
+				<input type="text" name="Gitanjali" placeholder="Gitanjali Track"required>
+				<label for="Gitanjali Edited BY">Gitanjali Edited BY:</label>
+                <select id="Gitanjali Edited BY" name="Gitanjali Edited BY">
+					<option value="_"></option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+					<option value="Unknown">Unknown</option>
+				</select>
+				<label for="Status-Gitanjali">Status-Gitanjali:</label>
+                <select id="Status-Gitanjali" name="Status-Gitanjali">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select>
+				<br><br>
+				
+
+				<input type="text" name="कार्यक्रम 1" placeholder="कार्यक्रम 1"required>
+
+				<input type="text" name="कार्यक्रम 1 विवरण" placeholder="कार्यक्रम 1 विवरण"required>
+
+				<label for="कार्यक्रम1निवेदन">कार्यक्रम 1 निवेदन :</label>
+                <select id="कार्यक्रम1निवेदन" name="कार्यक्रम1निवेदन">
+					<option value="_"></option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+					<option value="_"></option>
+				</select>
+				<label for="Status-Karyakram 1">Status-Karyakram 1:</label>
+                <select id="Status-Karyakram 1" name="Status-Karyakram 1">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select>
+				<br><br>
+				
+
+
+				<input type="text" name="कार्यक्रम 2" placeholder="कार्यक्रम 2"required>
+				<input type="text" name="कार्यक्रम 2 विवरण" placeholder="कार्यक्रम 2 विवरण"required>
+				<label for="कार्यक्रम2निवेदन">कार्यक्रम 2 निवेदन :</label>
+                <select id="कार्यक्रम2निवेदन" name="कार्यक्रम2निवेदन">
+					<option value="_"></option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+					<option value="_"></option>
+				</select>
+				<label for="Status-Karyakram 2">Status-Karyakram 2:</label>
+                <select id="Status-Karyakram 2" name="Status-Karyakram 2">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select>
+				<br>
+				<br>
+
+
+				<input type="text" name="बहुरंगी" placeholder="बहुरंगी"required>
+				<label for="Bahurangi Edited BY">Bahurangi Edited BY:</label>
+                <select id="Bahurangi Edited BY" name="Bahurangi Edited BY">
+					<option value="_"></option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option>
+					<option value="Unknown">Unknown</option>
+				</select>
+				<label for="Status-Bahurangi">Status-Bahurangi:</label>
+                <select id="Status-Bahurangi" name="Status-Bahurangi">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+				</select><br>
+				
+				<textarea name="Advt Details" rows="2" placeholder="Advertisemt Details seprated by comma"></textarea>
+				<br>
+				<br>
+				<textarea name="Remarks" rows="1" placeholder="Remarks"></textarea>
+				<input type="submit" value="Submit" id="submit"> <div id="success-message">Qsheet generated please print it</div>         		
+			
+				
+				<div id="success-message">Qsheet generated, please print it</div> <!-- Success message -->			
+				
+				</form>
+				<div id="success-message">Form Submitted</div> 
+            <br>                                                                                         
+			<button type="button" onclick="window.open('https://docs.google.com/spreadsheets/d/1cD087-rCPfEd2R1fdhy6UlYEOJ-HzodDIgGfKtrcCTg/edit?usp=sharing','_')">View Qsheet Data</button>
+			<br>
+			<br>
+			<button type="button" onclick="window.open('https://docs.google.com/spreadsheets/d/16zqAJU8A7F3YgSe7tKpZsV8VPt7Pn1euYN7qvPjERjo/edit?usp=sharing', '_')">View Aftenroon Q sheet Data</button>
+			
+			<h2 style="text-align: center; font-style: italic; color: rgb(167, 161, 161);">Developed by Mahatma Gandhi Institute for Rural Industrialization</h2>
+		
+			</div> 
+
+		<!-- JavaScript code integrated here -->
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbzcCOzk7sTHjH_sYheyN_6oIKcImzrt-ywd2Ld-iILSjdqy9NfW2NCS1lYJCoPuwAb_/exec';
+			const form = document.forms['M-E_Qsheets'];
+			const successMessage = document.getElementById('success-message');
+
+
+		form.addEventListener('submit', e => {
+        e.preventDefault();  // Prevent default form submission
+        
+        // Show the loading message
+        successMessage.style.display = 'block';  
+        successMessage.innerText = 'Submitting...'; // Change to loading message
+        
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    successMessage.innerText = 'Form Submitted Successfully!';
+                    form.reset();  // Optionally reset the form fields
+                } else {
+                    // Show error if the form submission fails
+                    successMessage.innerText = 'Failed to submit the form. Please try again.';
+                }
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            })
+            .catch(error => {
+                successMessage.innerText = 'Error! Please try again.';
+                console.error('Error!', error.message);
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            });
+    });
+</script>
+	</body>
+</html>

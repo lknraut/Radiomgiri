@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+		<!-- CSS styles integrated here -->
+		<style>
+			* {
+				box-sizing: border-box;
+				padding: 0;	
+				margin: 0;
+				font-family: 'Poppins', sans-serif;
+				font-size: 18px;
+			}
+			body {
+				height:;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.container {
+				width: 10000px;
+				padding: 30px;
+				border: 1px solid #ffffff;
+				border-radius: 20px;
+				background-color: #0e0336;
+			}
+			h4 {
+				margin-bottom: 10px;
+				font-size: 24px;
+				color: white;
+			}
+			input {
+				width: %;
+				padding: 5px;
+				margin-bottom: 10px;
+			}
+			textarea {
+				width: 100%;
+				padding: 10px;
+				
+			}
+			select {
+				margin-bottom: 10px;
+			}
+
+			#submit {
+				border: none;
+				background-color: orangered;
+				color: white;
+				width: 200px;
+				margin-top: 10px;
+				border-radius: 5px;
+			}
+			#submit:hover {
+				background-color: #333333;
+			}
+			#success-message {
+            display: none; /* Initially hidden */
+            background-color: rgb(223, 182, 0);
+			color: rgb(255, 255, 255);
+			border: none;
+			width: 200px;
+			margin-top: 10px;
+			border-radius: 5px;
+      
+		</style>
+	</head>
+		
+	<body>
+		<div class="container">
+			<form method="post" action="https://script.google.com/macros/s/AKfycbzPEUT2nQntri6iH_7OAxt1LpK_3fHT-vkKSzXAdTnF5WgO5qKqmdu-_g6GWRCptU9C/exec" name="AftenoonQsheet">
+				<h4>Afternoon Cue- Sheet<h4>
+                
+				<label style="color: white;" for="date">Select a date: </label>
+                <input type="date" id="date" name="date">
+                <br>
+                <input type="text" name="jinglead1-1" placeholder="1-1Jingles/advt name followed by comma">
+                <input type="text" name="jinglead1-1Duration" placeholder="1-1 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead1-2" placeholder="1-2 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead1-2Duration" placeholder="1-2 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead1-3" placeholder="1-3 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead1-3 Duration" placeholder="1-3 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead1-4 " placeholder="1-4Jingles/advt name followed by comma">
+                <input type="text" name="jinglead1-4 Duration" placeholder="1-4 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead1-5" placeholder="1-5 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead1-5Duration" placeholder="1-5 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <br>
+
+                
+                <label for="Status-Pashudhan">Status-Pashudhan:</label>
+                <select id="Status-Pashudhan" name="Status-Pashudhan">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+                <input type="text" name="Pashudhan" placeholder="Pashudhan">
+    
+                <label for="PashudhanNivedan">Pashudhan Nivedan:</label>
+                <select id="PashudhanNivedan" name="PashudhanNivedan">
+                    <option value="A. R. Parvej">A. R. Parvej</option>
+                    <option value="D. L. Ramteke">D. L. Ramteke</option>
+                    <option value="_">Blank</option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option> 
+                    <input type="text" name="Duration Pashudhan" placeholder="Duration Pashudhan in sec"style="background-color: rgb(252, 196, 196); color: white;">
+                    <br>
+               <input type="text" name="jinglead2-1" placeholder="2-1Jingles/advt name followed by comma">
+                <input type="text" name="jinglead2-1Duration" placeholder="2-1 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead2-2" placeholder="2-2 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead2-2Duration" placeholder="2-2 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead2-3" placeholder="2-3 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead2-3 Duration" placeholder="2-3 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead2-4 " placeholder="2-4Jingles/advt name followed by comma">
+                <input type="text" name="jinglead2-4 Duration" placeholder="2-4 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead2-5" placeholder="2-5 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead2-5Duration" placeholder="2-5 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <br>
+                <input type="text" name="Arogya Janjagruti Karykram" placeholder="आरोग्य जनजागृति कार्यक्रम">
+                
+                <label for="Arogya Janjagruti KarykramNivedan"> Nivedan:</label>
+                <select id="Arogya Janjagruti KarykramNivedan" name="Arogya Janjagruti KarykramNivedan">
+                    <option value="U.P Health Awareness Mission">Health Mission</option>
+                    <option value="_">Blank</option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option> 
+                <input type="text" name="Duration ArogyaJj" placeholder="Duration Arogy karyakram in sec"style="background-color: rgb(252, 196, 196); color: white;">
+                
+                    <br><input type="text" name="jinglead3-1" placeholder="3-1Jingles/advt name followed by comma">
+                    <input type="text" name="jinglead3-1Duration" placeholder="3-1 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                    <input type="text" name="jinglead3-2" placeholder="3-2 Jingles/advt name followed by comma">
+                    <input type="text" name="jinglead3-2Duration" placeholder="3-2 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                    <input type="text" name="jinglead3-3" placeholder="3-3 Jingles/advt name followed by comma">
+                    <input type="text" name="jinglead3-3 Duration" placeholder="3-3 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                    <input type="text" name="jinglead3-4 " placeholder="3-4Jingles/advt name followed by comma">
+                    <input type="text" name="jinglead3-4 Duration" placeholder="3-4 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                    <input type="text" name="jinglead3-5" placeholder="3-5 Jingles/advt name followed by comma">
+                    <input type="text" name="jinglead3-5Duration" placeholder="3-5 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+           <br>
+                <label for="Status-Geetmala">Status - Geetmala:</label>
+                <select id="Status-Geetmala" name="Status-Geetmala">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+
+                <input type="text" name="Gitmala" placeholder="Geetmala">
+
+                <input type="text" name="GeetmalaBY" placeholder="Geetmala Track Finalised By">
+
+               <br>
+                <input type="text" name="jinglead4-1" placeholder="4-1Jingles/advt name followed by comma">
+                <input type="text" name="jinglead4-1Duration" placeholder="4-1 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead4-2" placeholder="4-2 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead4-2Duration" placeholder="4-2 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead4-3" placeholder="4-3 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead4-3 Duration" placeholder="4-3 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead4-4 " placeholder="4-4Jingles/advt name followed by comma">
+                <input type="text" name="jinglead4-4 Duration" placeholder="4-4 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead4-5" placeholder="4-5 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead4-5Duration" placeholder="4-5 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <br>
+                <label for="Status-Prog3">Status - Program 3:</label>
+                <select id="Status-Prog3" name="Status-Prog3">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+
+                <input type="text" name="Prog3" placeholder="Program 3">
+                <label for="Prog3Nivedan"> Program 3 Nivedan:</label>
+                <select id="prog3Nivedan" name="Prog3Nivedan">
+                    <option value="_">Blank</option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option> 
+                <input type="text" name="Prog3Discription" placeholder="Program 3 विवरण">
+   
+<br>
+                <input type="text" name="jinglead5-1" placeholder="5-1Jingles/advt name followed by comma">
+                <input type="text" name="jinglead5-1Duration" placeholder="5-1 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead5-2" placeholder="5-2 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead5-2Duration" placeholder="5-2 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead5-3" placeholder="5-3 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead5-3 Duration" placeholder="5-3 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead5-4 " placeholder="5-4Jingles/advt name followed by comma">
+                <input type="text" name="jinglead5-4 Duration" placeholder="5-4 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead5-5" placeholder="5-5 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead5-5Duration" placeholder="5-5 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+<br>
+                <label for="Status-Prog4">Status - Program 4:</label>
+                <select id ="Status-Prog4" name="Status-Prog4">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+
+                <input type="text" name="Prog4" placeholder="Program 4">
+                <label for="Prog4Nivedan"> Program 4 Nivedan:</label>
+                <select id="prog4Nivedan" name="Prog4Nivedan">
+                    <option value="_">Blank</option>
+                    <option value="RJ सुहास">RJ Suhas</option>
+                    <option value="RJ वैशाली">RJ Vaishali</option>
+                    <option value="RJ निलकमल">RJ NIlkamal</option>
+                    <option value="RJ लखन">RJ lakhan</option> 
+                <input type="text" name="Prog4Discription" placeholder="Program 4 विवरण">
+
+
+<br>
+                <input type="text" name="jinglead6-1" placeholder="6-1Jingles/advt name followed by comma">
+                <input type="text" name="jinglead6-1Duration" placeholder="6-1 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead6-2" placeholder="6-2 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead6-2Duration" placeholder="3-2 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead6-3" placeholder="6-3 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead6-3 Duration" placeholder="3-3 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead6-4 " placeholder="6-4Jingles/advt name followed by comma">
+                <input type="text" name="jinglead6-4 Duration" placeholder="6-4 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead6-5" placeholder="6-5 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead6-5Duration" placeholder="6-5 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+<br>
+                <input type="text" name="Hindi Geet" placeholder="Hindi Geet">
+
+                <label for="Status-Hindi Geet">Status - Hindi Geet:</label>
+                <select id="Status-Hindi Geet" name="Status-Hindi Geet">
+                    <option value="OLD">OLD</option>
+                    <option value="FRESH">FRESH</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+
+                <input type="text" name="Hindi Geet made By" placeholder="1 Hr Track Finalised By">
+<br>
+                <input type="text" name="jinglead7-1" placeholder="7-1Jingles/advt name followed by comma">
+                <input type="text" name="jinglead7-1Duration" placeholder="7-1 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead7-2" placeholder="7-2 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead7-2Duration" placeholder="7-2 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead7-3" placeholder="7-3 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead7-3 Duration" placeholder="7-3 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead7-4 " placeholder="7-4Jingles/advt name followed by comma">
+                <input type="text" name="jinglead7-4 Duration" placeholder="7-4 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+                <input type="text" name="jinglead7-5" placeholder="7-5 Jingles/advt name followed by comma">
+                <input type="text" name="jinglead7-5Duration" placeholder="7-5 Duration In Sec Jingles/advt" style="background-color: rgb(252, 196, 196); color: white;">
+<br>
+                <textarea name="Remarks" rows="2" placeholder="Remarks"></textarea>
+				<input type="submit" value="Submit" id="submit"> <div id="success-message">Qsheet generated please print it</div>         		
+			</form>
+            <br><br><div id="success-message">Form Submitted</div>                                                                                          
+			<button type="button" onclick="window.open('https://docs.google.com/spreadsheets/d/1cD087-rCPfEd2R1fdhy6UlYEOJ-HzodDIgGfKtrcCTg/edit?usp=sharing','_blank')">View Morning Qsheet</button>
+			<br>
+			<br>
+			<button type="button" onclick="window.open('https://docs.google.com/spreadsheets/d/16zqAJU8A7F3YgSe7tKpZsV8VPt7Pn1euYN7qvPjERjo/edit?usp=sharing', '_blank')">Aftenroon Q sheet</button>
+		</div> 
+
+		<!-- JavaScript code integrated here -->
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbzPEUT2nQntri6iH_7OAxt1LpK_3fHT-vkKSzXAdTnF5WgO5qKqmdu-_g6GWRCptU9C/exec';
+			const form = document.forms['AftenoonQsheet'];
+			const successMessage = document.getElementById('success-message');
+
+	form.addEventListener('submit', e => {
+	e.preventDefault();  // Prevent the default form submission
+
+	fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+		.then(response => {
+			if (response.ok) {
+				successMessage.style.display = 'block';  // Show the success message
+				form.reset();  // Optionally reset the form fields
+				setTimeout(() => {
+                            successMessage.style.display = 'none';
+                        }, 5000);
+			} 
+			else {
+				alert('Failed to submit the form. Please try again.');
+			}
+		})
+		.catch(error => console.error('Error!', error.message));
+});
+		</script>
+	</body>
+</html>
